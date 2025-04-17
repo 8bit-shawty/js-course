@@ -13,8 +13,9 @@ const everydayPack = new Backpack(
   26,
   26,
   false,
-  "December 5, 2018 15:00:00 PST"
+  "April 14, 2025 14:00:00 PST"
 );
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+console.log("Days since aquired: ", everydayPack.backpackAge())

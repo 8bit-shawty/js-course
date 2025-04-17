@@ -16,6 +16,13 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  lidOpen: false,
+  nameChange: function (newName) {
+    this.name = newName;
+  },
+  changeVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -24,3 +31,12 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("Backpack Before: ", backpack)
+
+backpack.nameChange("Old Backpack")
+backpack.changeVolume(22)
+backpack.toggleLid(true)
+backpack.newStrapLength(10, 15)
+
+console.log("Backpack After: ", backpack)
